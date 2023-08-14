@@ -20,6 +20,8 @@ mongoose.connect('mongodb+srv://swaroop:Sambhaji2@cluster0.t5xti2g.mongodb.net/'
 }).then(() => {
   console.log('MongoDB Atlas connected successfully.');
 }).catch((error) => {
+
+
   console.error('MongoDB Atlas connection error:', error);
 });
 
