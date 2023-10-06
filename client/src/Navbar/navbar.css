@@ -1,8 +1,13 @@
+body {
+  overflow-x: hidden;
+}
 .navbar {
   display: flex;
+  position: fixed;
+  
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 29px;
   background-color: #242424;
   color: #fff;
 }
@@ -24,6 +29,7 @@
 
 /* Button styles */
 .navbar-buttons {
+  padding-top: 18px;
   display: flex;
   gap: 20px;
 }
@@ -37,6 +43,9 @@
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
+}
+.navbar-button:hover{
+  background-color: #a8f587;
 }
 
 .navbar-links {
