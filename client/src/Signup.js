@@ -9,8 +9,6 @@ const Signup = () => {
     password: '',
   });
 
-  const [error, setError] = useState('');
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -20,23 +18,14 @@ const Signup = () => {
     e.preventDefault();
     try {
       // Send a POST request to your backend API with formData
-      const response = await axios.post('http://localhost:3000/api/user/signup', formData);
-
-      // Handle the response
-      if (response.status === 201) {
-        // Signup successful, you can handle further actions here
-        // For example, you can redirect to a different page
-        console.log('Signup successful!');
-      } else {
-        // Signup failed, handle the error
-        setError('Signup failed. Please check your data.');
-      }
+      await axios.post('/api/user/signup', formData);
+      // Handle the response (e.g., store JWT token)
+      // Redirect to a different page (e.g., homepage)
     } catch (error) {
       // Handle errors (e.g., display error message)
-      setError('An error occurred. Please try again later.');
-      console.error('Error:', error.message);
     }
   };
+  
 
   return (
     <div className="signup-container">
@@ -72,7 +61,6 @@ const Signup = () => {
             required
           />
         </div>
-        {error && <div className="error-message">{error}</div>}
         <button type="submit">Sign Up</button>
       </form>
     </div>
@@ -80,4 +68,3 @@ const Signup = () => {
 };
 
 export default Signup;
-
