@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 29px;
-  background-color: #242424;
+  background-color: #FFFAFB;
   color: #fff;
 }
 
@@ -21,7 +21,9 @@ body {
   float: left;
   padding: none;
   width: 160px;
+  margin-left: 30px;
   height: 100px;
+  mix-blend-mode: multiply;
   /*background-position: center;
     background-attachment: fixed; */
   display: block;
@@ -37,7 +39,7 @@ body {
 
 .navbar-button {
   padding: 8px 16px;
-  background-color: #7ED957;
+  background-color: #FF2625;
   color: black;
   font-weight: bold;
   border: none;
@@ -46,7 +48,7 @@ body {
   text-decoration: none;
 }
 .navbar-button:hover{
-  background-color: #a8f587;
+  background-color: #ff6767;
 }
 
 .navbar-links {
@@ -55,12 +57,15 @@ body {
   margin-left: 700px;
   /* Pushes the links to the left */
 }
-
+.navbar-links :hover{
+  color: #FF2625;
+}
 .navbar-link {
   margin-right: 50px;
   /* Add margin between links */
-  color: #fff;
+  color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar-buttons {
@@ -256,7 +261,7 @@ button:active {
   width: 100%;
   position: relative;
   height: auto;
-  background-color:  #242424;
+  background-color:  #FFFAFB;
 }
 
 .footer .col {
@@ -276,7 +281,7 @@ button:active {
   font-size: 14px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: beige;
+  color: black;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.200em;
@@ -289,7 +294,7 @@ button:active {
 }
 
 .footer .col ul li {
-  color: white;
+  color: black;
   font-size: 14px;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: bold;
@@ -306,7 +311,7 @@ button:active {
 }
 
 .footer .col ul li:hover {
-  color: #7ED957;
+  color: #FF2625;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -379,6 +384,6 @@ button:active {
 }
 
 #preetesh:hover {
-  background-color: #7ED957;
+  background-color: #FF2625;
   /* New background color on hover */
 }
